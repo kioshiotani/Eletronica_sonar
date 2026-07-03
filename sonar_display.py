@@ -29,9 +29,9 @@ except ImportError:
 BAUD_RATE = 9600
 MIN_ANGLE = 30
 MAX_ANGLE = 150
-MAX_DIST_CM = 40          # distância máxima mostrada no radar
-RING_STEP_CM = 10         # espaçamento entre os círculos de referência
-POINT_LIFETIME = 3.0      # segundos que um "eco" fica visível
+MAX_DIST_CM = 40          # distancia maxima mostrada no radar
+RING_STEP_CM = 10         # espacamento entre os circulos de referencia
+POINT_LIFETIME = 3.0      # segundos que um eco fica visivel
 FPS = 60
 
 WIDTH, HEIGHT = 900, 600

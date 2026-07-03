@@ -5,8 +5,8 @@
 #define ECHO_PIN 12
 #define MIN_ANGLE 30
 #define MAX_ANGLE 150
-#define DELAY_SERVO 30 // ms
-#define DELAY_TRIG_LOW 2 // microseconds
+#define DELAY_SERVO 5 // ms, velocidade que o servinho gira
+#define DELAY_TRIG_LOW 2 // microseconds, tempo que o trigger do sensor fica low
 #define DELAY_TRIG_HIGH 10 // microseconds
 #define SOUND_SPEED 0.0343 // cm/microseconds
 
