@@ -29,6 +29,7 @@ Agradecimentos à José Fausto Vital Barbosa, Pablo Henrique Almeida Vieira, Ped
 ## Tabela de pinagem
 
 | Pino no arduino | Componente | Pino do componente |
+|----------|----------|----------|
 | 11 | Sensor Ultrassônico | TRIG\_PIN |
 | 12 | Sensor Ultrassônico | ECHO\_PIN |
 | 5V | Sensor Ultrassônico | Vcc |
@@ -50,7 +51,7 @@ Valor Total: R$ 170,69
 
 ## Guia de como fazer o projeto funcionar
 ####  Envie o código `sonar.ino` ao arduino. 
-#### Instale as dependências `pygame` e `pyserial
+#### Instale as dependências `pygame` e `pyserial`
 ```
 pip install pyserial
 pip install pygame
