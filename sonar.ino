@@ -9,7 +9,7 @@
 #define DELAY_TRIG_LOW 2 // microseconds, tempo que o trigger do sensor fica low
 #define DELAY_TRIG_HIGH 10 // microseconds
 #define SOUND_SPEED 0.0343 // cm/microseconds
-#define MAX_DIST 50 // cm, timeout do sensor ultrassonico
+#define MAX_DIST 100 // cm, timeout do sensor ultrassonico
 
 Servo servo;
 
@@ -53,7 +53,8 @@ int calcDist() {
     digitalWrite(TRIG_PIN, HIGH);
     delayMicroseconds(DELAY_TRIG_HIGH);
     
-    duration = pulseIn(ECHO_PIN, HIGH, (long)(MAX_DIST_CM * 2 / SOUND_SPEED)); // microseconds
+    duration = pulseIn(ECHO_PIN, HIGH, (long)(MAX_DIST * 2 / SOUND_SPEED)); // microseconds
+
 
     // logica de timeout para se caso nao tiver retorno da onda no sensor ultrassonico
     if(duration == 0) {
@@ -65,4 +66,6 @@ int calcDist() {
     if(dist > MAX_DIST) { // seguranca a mais, caso nao detecte o timeout
         return -1;
     }
+
+    return dist;
 }
